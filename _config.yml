@@ -151,6 +151,7 @@ defaults:
       swcache: true
 
 sass:
+  sass_dir: /assets/css
   style: compressed
 
 compress_html:
@@ -171,9 +172,6 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
-
-plugins:
-  - jekyll-archives
 
 jekyll-archives:
   enabled: [categories, tags]
