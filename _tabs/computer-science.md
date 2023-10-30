@@ -1,5 +1,5 @@
 ---
 layout: categories
 icon: fas fa-laptop-code
-order: 6
+order: 8
 ---
