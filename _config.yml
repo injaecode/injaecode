@@ -9,9 +9,9 @@ timezone: Asia/Seoul
 
 # ↓ --------------------------
 
-title: INJAECODE.zip # the main title
+title: INCODING.zip # the main title
 
-tagline: witten-by-ij # it will display as the sub-title
+tagline: written-by-ij # it will display as the sub-title
 
 description: >-
   ✨🔍💾
@@ -181,4 +181,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /category/:name/
-
