@@ -1,23 +1,23 @@
----
+ <!-- ---
 layout: page
 # The Archives of posts.
 ---
+
 {% include lang.html %}
 
 {% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
 {% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
 
 <div id="archives" class="pl-xl-3">
-  {% assign til_posts = site.posts | where: "categories", "TIL" %}
-  {% assign last_year = nil %}
-
-  {% for post in til_posts %}
+  {% for post in site.posts | where: "categories", "TIL" %}
     {% assign cur_year = post.date | date: '%Y' %}
 
     {% if cur_year != last_year %}
       {% unless forloop.first %}</ul>{% endunless %}
+
       <time class="year lead d-block">{{ cur_year }}</time>
       {{ '<ul class="list-unstyled">' }}
+
       {% assign last_year = cur_year %}
     {% endif %}
 
@@ -30,8 +30,6 @@ layout: page
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
 
-    {% if forloop.last %}
-      </ul>
-    {% endif %}
+    {% if forloop.last %}</ul>{% endif %}
   {% endfor %}
-</div>
+</div>  -->
